@@ -1,7 +1,5 @@
 const Movie = require('./schema');
 const date = require('./date')
-const _ = require('lodash');
-const path = require('path');
 const randomstring = require("randomstring");
 
 var set;
@@ -21,7 +19,7 @@ var set;
 let movie = {
     movies:async(req,res)=>{
      try {
-        Movie.paginate({}, { offset: 20, limit: 10 },(err,response)=>{
+        Movie.find({},(err,response)=>{
             if(err) {
                 console.log(err)
             }
