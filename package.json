@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "serve": "node index.js --proxy-config proxy.conf.json",
-    "start": "node chat.js",
+    "start": "node index.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
