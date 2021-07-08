@@ -65,7 +65,8 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "invisible-project:build:production"
+              "browserTarget": "invisible-project:build:production",
+              "proxyConfig": "/proxy.conf.json"
             }
           }
         },
