@@ -21,10 +21,6 @@ app.use(express.static(__dirname+'/dist/invisible-project/'))
 app.use('/',routes);
 
 app.use(cors(corsOptions))
-app.use((req, res, next)=> {
-    req.db = client
-    next();
-});
 // app.options('*', cors());
 app.use((req, res, next)=> {
     res.header("Access-Control-Allow-Headers", "*");
