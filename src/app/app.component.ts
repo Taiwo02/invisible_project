@@ -21,7 +21,7 @@ export class AppComponent  {
 
   }
   ngOnInit(){
-  this.http.get<any>('http://localhost:5000/api').subscribe(
+  this.http.get<any>('api').subscribe(
     data=>{
       if(localStorage.hasOwnProperty("columns") && localStorage.hasOwnProperty("rowls")){
          this.columnWidth = JSON.parse(localStorage.getItem("columns"))
