@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "serve": "node index.js --proxy-config proxy.conf.json",
+    "serve": "node index.js",
     "start": "node index.js",
     "build": "ng build",
     "test": "ng test",
@@ -11,7 +11,7 @@
     "e2e": "ng e2e",
     "postinstall": "ng build"
   },
-  "private": true,
+  "private": true, 
   "dependencies": {
     "@angular/animations": "~11.2.12",
     "@angular/common": "~11.2.12",
