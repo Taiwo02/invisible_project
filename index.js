@@ -4,7 +4,7 @@ const app = express();
 const bodyparser = require('body-parser');
 const routes = require('./serverSide/route')
 const mongoose = require('mongoose');
-const mongoURL = process.env.MONGO_URL || 'mongodb+srv://Taiwo:56987456Taiwo@cluster0.lyrtx.mongodb.net/invisible?retryWrites=true&w=majority'
+const mongoURL = process.env.MONGO_URL || 'mongodb+srv://Taiwo:<password>@cluster0.keh7q.mongodb.net/?retryWrites=true&w=majority'
 const cors = require('cors')
 const client =  mongoose.connect(mongoURL, { useNewUrlParser: true,useUnifiedTopology: true  });
 const corsOptions = {
