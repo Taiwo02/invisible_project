@@ -88,7 +88,7 @@ show(){
   
     update = (change, source) => {
       let newUpdate = this.dataset[change]?this.dataset[change[0][0]]?._id:""
-      this.dataset?this.http.post<any>('api/update/'+newUpdate,{key:change[0][1],value:change[0][3]}).subscribe(
+      this.dataset[change]?this.http.post<any>('api/update/'+newUpdate,{key:change[0][1],value:change[0][3]}).subscribe(
         data=>{
           console.log(data)
         }
