@@ -63,9 +63,9 @@ show(){
    localStorage.setItem("rows",JSON.stringify(updatedColum))
   }
   delete = (index, amount,physicalRows,source)=>{
-    console.log(this.dataset[index]._id)
+    console.log(this.dataset[index]?._id)
     console.log(index)
-    let newUpdate =this.dataset[index]._id
+    let newUpdate =this.dataset[index]?._id
     this.http.get<any>('api/delete/'+newUpdate).subscribe(
       data=>{
         console.log(data)
@@ -87,7 +87,7 @@ show(){
     // console.log(this.update("changes","source"))
   
     update = (change, source) => {
-      let newUpdate = this.dataset[change[0][0]]._id
+      let newUpdate = this.dataset[change[0][0]]?._id
       this.http.post<any>('api/update/'+newUpdate,{key:change[0][1],value:change[0][3]}).subscribe(
         data=>{
           console.log(data)
