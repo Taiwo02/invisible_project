@@ -72,9 +72,19 @@ show(){
       }
     )
   }
-  addChild(addedSheetDisplayName){
-    console.log(addedSheetDisplayName)
-  }
+  // addChild(addedSheetDisplayName){
+  //   console.log(addedSheetDisplayName)
+  // }
+  // addChild = (parent,element,index)=>{
+  //           console.log(parent,element,index)
+  // }
+  // update(changes: string,source: string,data){
+  //   // let dt = this.dataset
+  //   console.log(changes)
+  //   // return this
+  // }
+ 
+    // console.log(this.update("changes","source"))
   
     update = (change, source) => {
       let newUpdate = this.dataset[change]?this.dataset[change[0][0]]?._id:""
